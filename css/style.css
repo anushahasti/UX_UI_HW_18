@@ -4,6 +4,7 @@ html {
     padding: 0;
 }
 
+/*
 #navBar {
     display: flex;
     flex-direction: row;
@@ -35,6 +36,515 @@ html {
     padding: 15px;
     text-decoration: none;
 }
+*/
+
+
+
+
+
+
+.navbar {
+    font-size: 18px;
+    background-image: white;
+    border: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: black;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+
+
+#navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.icons img {
+    margin: 15px;
+    cursor: pointer;
+    width: 100px;
+}
+
+#navigation {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#navigation p {
+    cursor: pointer;
+    padding: 15px;
+    text-decoration: none;
+}
+
+
+
+
+#headline {
+
+
+    margin: 0px;
+}
+
+#heroGrid {
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+        "introduction"
+        "myimage";
+}
+
+#introduction {
+    padding-top: 10px;
+}
+
+#headline {
+    position: center;
+
+    padding: 30px;
+    padding-right: 0px;
+}
+
+
+#myimage {
+    grid-area: myimage;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 0px;
+}
+
+#myimage img {
+    width: 200px;
+}
+
+.icons img {
+    width: "40px";
+}
+
+.subHeading {
+    display: none;
+}
+
+#categoryGrid {
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "Plantae"
+        "plantaetext"
+        "GovwebsiteRedesign"
+        "gtext"
+        "IntotheWildOutdoors"
+        "IWOtext";
+}
+
+.categoryGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    cursor: pointer;
+    display: grid;
+
+}
+
+#Plantae {
+    display: flex;
+    grid-area: Plantae;
+    background-color: #C7CDBE;
+    justify-content: center;
+}
+
+#Plantae img {
+    width: 300px;
+}
+
+
+#GovwebsiteRedesign {
+    grid-area: GovwebsiteRedesign;
+    background-color: skyblue;
+    justify-content: center;
+}
+
+#GovwebsiteRedesign img {
+    width: 300px;
+}
+
+#IntotheWildOutdoors {
+    grid-area: IntotheWildOutdoors;
+    background-color: #E56A00;
+    justify-content: center;
+}
+
+#IntotheWildOutdoors img {
+    width: 300px;
+}
+
+.icons1 {
+    display: flex;
+    padding-left: 0px;
+    justify-content: center;
+}
+
+/*
+
+
+*/
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: skyblue;
+    }
+
+    #navBar {
+        display: flex;
+        flex-direction: row;
+        margin: 0px 5%;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    .icons img {
+        margin: 15px;
+        cursor: pointer;
+        width: 100px;
+    }
+
+    #navigation {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    #navigation p {
+        cursor: pointer;
+        padding: 15px;
+        text-decoration: none;
+    }
+
+
+
+
+    #heroGrid {
+        margin: 0px 5%;
+        display: grid;
+        min-height: 200px;
+        height: 60vh;
+        grid-template-columns: 75% 25%;
+        grid-template-areas:
+            "introduction myimage";
+    }
+
+    #introduction {
+        padding-top: 100px;
+    }
+
+
+    #myimage {
+        grid-area: myimage;
+        width: 300px;
+        justify-content: center;
+        cursor: pointer;
+        padding-top: 100px;
+    }
+
+
+    .heroGridArea {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+
+        display: flex;
+        position: relative;
+    }
+
+    #headline {
+        position: relative;
+
+        padding: 50px;
+        padding-right: 300px;
+    }
+
+    .subHeading {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        margin: 50px auto;
+        cursor: pointer;
+    }
+
+    .gridChild {
+        margin: 15px;
+        padding: 15px;
+        height: 200px;
+    }
+
+    .arrow {
+        grid-area: arrow;
+        text-align: center;
+    }
+
+
+    .bounceMe {
+        animation: bounceArrow .7s infinite;
+    }
+
+    @keyframes bounceArrow {
+        from {
+            margin-top: 0px;
+        }
+
+        50% {
+            margin-top: 7px;
+        }
+
+        to {
+            margin-top: 0px;
+        }
+    }
+
+    #categoryGrid {
+        margin: 0px 5%;
+        display: grid;
+        grid-template-rows: 500px 500px 500px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "Plantae plantaetext"
+            "GovwebsiteRedesign  gtext "
+            "IntotheWildOutdoors  IWOtext"
+        ;
+    }
+
+    #Plantae {
+        display: flex;
+        grid-area: Plantae;
+        background-color: #C7CDBE;
+        justify-content: center;
+    }
+
+    #Plantae img {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+
+    #GovwebsiteRedesign {
+        grid-area: GovwebsiteRedesign;
+        background-color: skyblue;
+        justify-content: center;
+    }
+
+    #plantaetext {
+        justify-content: flex-start;
+        padding: 20px;
+
+    }
+
+    #gtext {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    #IntotheWildOutdoors {
+        grid-area: IntotheWildOutdoors;
+        background-color: #E56A00;
+        justify-content: center;
+    }
+
+    #IWOtext {
+
+        justify-content: center;
+        padding: 20px;
+    }
+
+
+
+    .categoryGridArea {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 40px;
+        cursor: pointer;
+        display: grid;
+
+    }
+
+    .hoverMe {
+        grid-area: hover;
+        background-color: white;
+        color: black;
+        width: 180px;
+        text-align: center;
+        height: 50px;
+        border-color: skyblue;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    /* active state */
+
+    .hoverMe:hover {
+        background-color: skyblue;
+    }
+
+
+
+
+    a {
+        text-align: center;
+        color: rgb(5, 5, 5);
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+
+    }
+
+    a:hover {
+
+        color: skyblue;
+
+        transition: 0.5s;
+    }
+
+
+
+
+
+
+    h3,
+    p {
+        display: flex;
+        margin-top: 10px;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+
+
+
+
+
+
+
+    .footer {
+        justify-content: center;
+        padding: 100px;
+        flex-direction: row;
+        margin: 0px 5%;
+
+    }
+
+    .footertext {
+        display: flex;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        justify-content: center;
+    }
+
+    .icons1 {
+        display: flex;
+        width: 0%;
+        justify-content: center;
+        padding-left: 500px;
+        cursor: pointer;
+    }
+
+    .icons1 img {
+        margin: 15px;
+        cursor: pointer;
+        width: 40px;
+    }
+
+    .abc {
+
+        width: 0px;
+    }
+
+}
+
+/*
 
 #heroGrid {
     margin: 0px 5%;
@@ -177,7 +687,7 @@ html {
 
 .hoverMe {
     grid-area: hover;
-    background-color: white;
+    background-color: skyblue;
     color: black;
     width: 180px;
     text-align: center;
@@ -186,6 +696,8 @@ html {
 }
 
 /* active state */
+
+/*
 .hoverMe:hover {
     background-color: skyblue;
 }
@@ -260,99 +772,4 @@ p {
 .abc {
 
     width: 0px;
-}
-
-@media only screen and (max-width: 1000px) {
-    #navigation {
-        display: none;
-    }
-
-    .icons {
-        margin-right: auto;
-    }
-}
-
-
-@media only screen and (max-width: 600px) {
-    #headline {
-        margin: 0px;
-    }
-
-    #heroGrid {
-        grid-template-rows: 200px 200px;
-        grid-template-areas:
-            "introduction"
-            "myimage";
-    }
-
-    #introduction {
-        padding-top: 10px;
-    }
-
-    #headline {
-        position: center;
-
-        padding: 30px;
-        padding-right: 0px;
-    }
-
-
-    #myimage {
-        grid-area: myimage;
-        justify-content: center;
-        cursor: pointer;
-        padding-top: 0px;
-    }
-
-    #myimage img {
-        width: 200px;
-    }
-
-    .icons img {
-        width: "40px";
-    }
-
-    .subHeading {
-        display: none;
-    }
-
-    #categoryGrid {
-        grid-template-rows: 300px 300px 300px 300px 300px;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "Plantae"
-            "plantaetext"
-            "GovwebsiteRedesign"
-            "gtext"
-            "IntotheWildOutdoors"
-            "IWOtext";
-    }
-
-    .categoryGridArea {
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin: 0px;
-        cursor: pointer;
-        display: grid;
-
-    }
-
-    #Plantae img {
-        width: 300px;
-    }
-
-    #GovwebsiteRedesign img {
-        width: 300px;
-    }
-
-    #IntotheWildOutdoors img {
-        width: 300px;
-    }
-
-    .icons1 {
-        display: flex;
-        padding-left: 0px;
-        justify-content: center;
-    }
 }
