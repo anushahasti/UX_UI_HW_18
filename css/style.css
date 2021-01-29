@@ -4,6 +4,19 @@ html {
     padding: 0;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h1 {
+    font-size: 40px;
+}
+
+#headline p {
+    font-size: 30px;
+}
+
 /*
 #navBar {
     display: flex;
@@ -228,7 +241,7 @@ html {
 }
 
 #IntotheWildOutdoors img {
-    width: 300px;
+    width: 400px;
 }
 
 .icons1 {
@@ -254,6 +267,20 @@ html {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     justify-content: center;
+}
+
+.myimage img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.myself {
+    text-align: center;
+    display: block;
+    padding: 30px 120px 50px 120px;
 }
 
 /*
@@ -582,6 +609,19 @@ html {
         width: 0px;
     }
 
+    .myimage img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        padding-top: 100px;
+    }
+
+    .myself {
+        text-align: center;
+        display: block;
+        padding: 30px 120px 50px 120px;
+    }
 }
 
 /*
