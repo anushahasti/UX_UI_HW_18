@@ -10,3 +10,4 @@ $(document).ready(function(){
     $("#myimage").css("color", "red").slideUp(2000);
   });
 });
+
