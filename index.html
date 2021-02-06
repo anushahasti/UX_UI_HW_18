@@ -76,9 +76,11 @@
 
   <section id="categoryGrid">
     <div id="Plantae" class="categoryGridArea">
+      <!--
       <div class="heading">
-        <img src="./css/assets/Group 19 (1).png" width="500px">
+        <img src="./css/assets/Group 19 (1).png">
       </div>
+      -->
     </div>
     <div id="plantaetext" class="categoryGridArea">
       <div class="heading">
@@ -95,9 +97,11 @@
       </div>
     </div>
     <div id="GovwebsiteRedesign" class="categoryGridArea">
+      <!--
       <div class="heading">
         <img src="./css/assets/Department_of_Homeland_Security__10_-removebg-preview (1) 1.png" width="400px">
       </div>
+      -->
     </div>
     <div id="gtext" class="categoryGridArea">
       <div class="heading">
@@ -110,9 +114,11 @@
     </div>
 
     <div id="IntotheWildOutdoors" class="categoryGridArea">
+      <!--
       <div class="heading">
         <img src="./css/assets/Group 39 (4).png">
       </div>
+      -->
     </div>
     <div id="IWOtext" class="categoryGridArea">
       <div class="heading">
@@ -151,7 +157,7 @@
     $('a[href="#comehere]').click(function(e){
       e.preventDefault();
       var targetOffset = $('a[name="comehere"]').offset().top;
-      $('body').animate(
+      $('htmlbody').animate(
         {scrollTop: targetOffset},
         2000
       );

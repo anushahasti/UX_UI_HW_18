@@ -190,7 +190,9 @@ h1 {
 }
 
 #categoryGrid {
-    grid-template-rows: 300px 300px 300px 300px 300px;
+
+    display: grid;
+    grid-template-rows: 500px 300px 500px 300px 500px 300px;
     grid-template-columns: 1fr;
     grid-template-areas:
         "Plantae"
@@ -215,18 +217,19 @@ h1 {
 #Plantae {
     display: flex;
     grid-area: Plantae;
-    background-color: #C7CDBE;
+    background-image: url(../css/assets/Group\ 57.png);
     justify-content: center;
 }
 
 #Plantae img {
-    width: 300px;
+    padding-bottom: 30px;
+    width: 500px;
 }
 
 
 #GovwebsiteRedesign {
     grid-area: GovwebsiteRedesign;
-    background-color: skyblue;
+    background-image: url(../css/assets/Group\ 57\ \(1\).png);
     justify-content: center;
 }
 
@@ -236,7 +239,7 @@ h1 {
 
 #IntotheWildOutdoors {
     grid-area: IntotheWildOutdoors;
-    background-color: #E56A00;
+    background-image: url(../css/assets/Group\ 57\ \(2\).png);
     justify-content: center;
 }
 
@@ -452,6 +455,7 @@ h1 {
     #categoryGrid {
         margin: 0px 5%;
         display: grid;
+
         grid-template-rows: 500px 500px 500px;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -464,23 +468,32 @@ h1 {
     #Plantae {
         display: flex;
         grid-area: Plantae;
-        background-color: #C7CDBE;
+
+        background-image: url(../css/assets/Group\ 57.png);
         justify-content: center;
     }
 
     #Plantae img {
         width: 500px;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+
         justify-content: center;
-        text-align: center;
+        align-content: center;
+
+
+        justify-content: center;
+
+        ;
+
     }
 
 
 
     #GovwebsiteRedesign {
+        display: flex;
         grid-area: GovwebsiteRedesign;
-        background-color: skyblue;
+        background-image: url(../css/assets/Group\ 57\ \(1\).png);
+
         justify-content: center;
     }
 
@@ -497,7 +510,7 @@ h1 {
 
     #IntotheWildOutdoors {
         grid-area: IntotheWildOutdoors;
-        background-color: #E56A00;
+        background-image: url(../css/assets/Group\ 57\ \(2\).png);
         justify-content: center;
     }
 
