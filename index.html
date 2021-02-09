@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
         crossorigin="anonymous"></script>
+        <link href="assets/img/favicon.png" rel="icon">
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@600&display=swap"
@@ -69,8 +71,9 @@
   </section>
 
   <div class="subHeading">
+    
     <div class="gridChild arrow">
-     <a href="#comehere"></a> <img class="bounceMe" src="./css/assets/arrow-down-sign-to-navigate (1).svg" width="50px"></a>
+     <a  class="scrollTo" href="#section1"><img class="bounceMe" src="./css/assets/arrow-down-sign-to-navigate (1).svg" width="50px"></a>
     </div>
   </div>
 
@@ -82,6 +85,7 @@
       </div>
       -->
     </div>
+   <div id="section1">
     <div id="plantaetext" class="categoryGridArea">
       <div class="heading">
         <p><a name="comehere"></a></p>
@@ -98,6 +102,7 @@
       </a>
       </div>
     </div>
+  </div>
     <div id="GovwebsiteRedesign" class="categoryGridArea">
       <!--
       <div class="heading">
@@ -151,23 +156,20 @@
 
   </footer>
 
-  <script src="js/main.js"></script>
 
+
+  <script src="js/main.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript">
-  $(function(){
-    $('a[href="#comehere]').click(function(e){
-      e.preventDefault();
-      var targetOffset = $('a[name="comehere"]').offset().top;
-      $('htmlbody').animate(
-        {scrollTop: targetOffset},
-        2000
-      );
+  <script src="jquery.sticky.js"></script>
+
   
-      
-    });
-  });
-</script>
+
+
+
 
 </body>
 

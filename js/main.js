@@ -12,3 +12,23 @@ $(document).ready(function(){
 });
 
 
+
+
+$(function(){
+  $('a[href="#comehere]').click(function(e){
+    e.preventDefault();
+    var targetOffset = $('a[name="comehere"]').offset().top;
+    $('htmlbody').animate(
+      {scrollTop: targetOffset},
+      2000
+    );
+
+    
+  });
+});
+
+
+
+
+
+

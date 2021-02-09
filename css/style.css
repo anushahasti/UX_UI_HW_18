@@ -299,6 +299,30 @@ button {
     margin: 10px;
 }
 
+.scrollDown {
+    width: 2rem;
+    height: 2rem;
+    background-color: purple;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transition: background-color 0.5s ease;
+    z-index: 6000;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    transition: margin-bottom 0.2s;
+}
+
+.scrollDown:hover {
+    background-color: maroon;
+}
+
+.scrollDown:active {
+    margin-bottom: 1.5rem;
+}
+
 /*
 
 
@@ -435,6 +459,8 @@ button {
         cursor: pointer;
     }
 
+
+
     .gridChild {
         margin: 15px;
         padding: 15px;
@@ -464,6 +490,7 @@ button {
             margin-top: 0px;
         }
     }
+
 
     #categoryGrid {
         margin: 0px 5%;
